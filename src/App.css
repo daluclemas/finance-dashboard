@@ -1,0 +1,62 @@
+@font-face {
+  font-family: google-sans;
+  src: url("/fonts/ProductSans-Regular.ttf");
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white;
+}
+
+body {
+  background: white;
+}
+
+.logo-img {
+  background: url("./assets/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.rounded-btn {
+  border-radius: 0 15px 15px 15px;
+}
+
+.avatar {
+  filter: drop-shadow(-7.163px 7.163px 17.908px rgba(252, 91, 92, 0.75));
+}
+
+.custom-btn-shadow {
+  box-shadow: 0px 2.024px 3.442px 0px rgba(41, 72, 152, 0.01),
+    0px 8.908px 7.126px 0px rgba(41, 72, 152, 0.02),
+    0px 21.864px 14.212px 0px rgba(41, 72, 152, 0.03),
+    0px 42.109px 27.857px 0px rgba(41, 72, 152, 0.03),
+    0px 70.857px 51.219px 0px rgba(41, 72, 152, 0.04),
+    0px 109.322px 87.458px 0px rgba(41, 72, 152, 0.05);
+}
+
+.chart {
+  width: 100%;
+  height: 139px;
+  background: url("./assets/graph.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.sticky-header {
+  box-shadow: 0px 2.024px 3.442px 0px rgba(41, 72, 152, 0.01),
+    0px 8.908px 7.126px 0px rgba(41, 72, 152, 0.02),
+    0px 21.864px 14.212px 0px rgba(41, 72, 152, 0.03),
+    0px 42.109px 27.857px 0px rgba(41, 72, 152, 0.03),
+    0px 70.857px 51.219px 0px rgba(41, 72, 152, 0.04),
+    0px 109.322px 87.458px 0px rgba(41, 72, 152, 0.05);
+}
+
+.shadow-custom {
+  box-shadow: 10px 10px 10px 999px rgba(0, 0, 0, 0.8);
+}
