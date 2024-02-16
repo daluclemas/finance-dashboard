@@ -116,3 +116,33 @@ export const dashCardData = [
     title: "Boosters",
   },
 ];
+
+export const earningsData = [
+  {
+    title: "Harvested loses",
+    price: "0.00",
+    icons: () => <customIcons.Income />,
+    bg: "bg-lightDenim",
+  },
+
+  {
+    title: "Total earnings",
+    price: "10,596.80",
+    icons: () => <customIcons.Earnings />,
+    bg: "bg-customOrange",
+  },
+
+  {
+    title: "Total net worth",
+    price: "5,250.90",
+    icons: () => <customIcons.Networth />,
+    bg: "bg-customGreen",
+  },
+
+  {
+    title: "Total for all goals",
+    price: "5,596.80",
+    icons: () => <customIcons.Goal />,
+    bg: "bg-customPurple",
+  },
+];

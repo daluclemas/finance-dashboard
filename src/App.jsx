@@ -4,7 +4,7 @@ import { FiUser } from "react-icons/fi";
 import { PiBell } from "react-icons/pi";
 import { Link } from "react-router-dom";
 import * as customIcons from "./lib/custom-icons";
-import { dashCardData } from "./utils/appdata";
+import { dashCardData, earningsData } from "./utils/appdata";
 
 function App() {
   return (
@@ -43,7 +43,7 @@ function App() {
             </header>
 
             <section className="flex flex-col xl:flex-row mt-12 w-full xl:gap-10">
-              <div className=" w-full xl:max-w-[530px]">
+              <div className=" w-full xl:max-w-[530px] ">
                 <div className="flex items-center gap-5 justify-between xl:justify-normal xl:gap-6 flex-wrap">
                   {dashCardData.map((data, index) => {
                     return (
@@ -55,8 +55,31 @@ function App() {
                     );
                   })}
                 </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 mt-16 gap-10">
+                  {earningsData.map((data, index) => {
+                    return (
+                      <div className="flex items-center gap-5 py-1" key={index}>
+                        <div
+                          className={`w-[57.64px] h-[57px] rounded-lg flex items-center justify-center ${data.bg}`}
+                        >
+                          {data.icons()}
+                        </div>
+
+                        <article className="">
+                          <h5 className="capitalize text-sm text-raven">
+                            {data.title}
+                          </h5>
+                          <p className="font-tomorrowFont font-medium text-2xl mt-1">
+                            ${data.price}
+                          </p>
+                        </article>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
-              <div className=" w-full xl:max-w-[350px]"></div>
+              <div className=" w-full xl:max-w-[350px] "></div>
             </section>
           </section>
         </div>

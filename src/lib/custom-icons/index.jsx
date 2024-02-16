@@ -17,3 +17,7 @@ export { default as Key } from "./Key";
 export { default as Car } from "./Car";
 export { default as Gear } from "./Gear";
 export { default as Battery } from "./Battery";
+export { default as Income } from "./Earnings";
+export { default as Earnings } from "./CashFlow";
+export { default as Networth } from "./Networth";
+export { default as Goal } from "./Goal";
