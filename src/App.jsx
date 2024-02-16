@@ -78,6 +78,8 @@ function App() {
                     );
                   })}
                 </div>
+
+                <components.RecentActivity />
               </div>
               <div className=" w-full xl:max-w-[350px] "></div>
             </section>
